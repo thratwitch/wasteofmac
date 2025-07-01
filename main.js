@@ -25,7 +25,7 @@ function launchConfetti() {
     fullscreenable: false,
     webPreferences: {
       nodeIntegration: false,
-      contextIsolation: true
+      contextIsolation: true // if you change ts youre getting a virus 100%
     }
   });
 
@@ -44,7 +44,7 @@ app.on('before-quit', (event) => {
       buttons: ['Cancel', 'Quit'],
       defaultId: 1,
       cancelId: 0,
-      message: 'Are you sure you want to quit wasteof.money? Touching grass is lame...'
+      message: 'Are you sure you want to quit wasteof.money? Touching grass is lame...' // on gruh
     });
 
     if (choice === 1) {
@@ -56,7 +56,7 @@ app.on('before-quit', (event) => {
 
 function createWindow() {
   const offsetX = Math.floor(Math.random() * 300);
-  const offsetY = Math.floor(Math.random() * 300);
+  const offsetY = Math.floor(Math.random() * 300); //window randomiser thingy
 
   const win = new BrowserWindow({
     width: 1000,
@@ -107,7 +107,7 @@ function createWindow() {
               dialog.showMessageBox({
                 type: 'info',
                 title: 'About wasteof.money',
-                message: `macOS desktop client for wasteof.money\n\nVersion ${pkg.version}`,
+                message: `macOS desktop client for wasteof.money\n\nVersion ${pkg.version}`, //uh
                 buttons: ['OK']
               });
             }, 150);
@@ -116,7 +116,7 @@ function createWindow() {
         { type: 'separator' },
         {
           label: 'New Window',
-          accelerator: 'CommandOrControl+N',
+          accelerator: 'CommandOrControl+N', //commandorcontrol just in case i bother to port ts to windows or linux
           click: () => createWindow()
         },
         { role: 'close' },
@@ -139,7 +139,7 @@ function createWindow() {
       ]
     },
     {
-      label: 'Navigation',
+      label: 'Navigation', // back and fourth and stuff
       submenu: [
         {
           label: 'Back',
