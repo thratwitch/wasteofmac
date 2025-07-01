@@ -1,0 +1,18 @@
+{
+  "name": "wasteof.money",
+  "version": "1.0.3",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^37.1.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}

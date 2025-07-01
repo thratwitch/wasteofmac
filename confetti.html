@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    html, body {
+      margin: 0;
+      background: transparent;
+      overflow: hidden;
+    }
+    canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="confetti-canvas"></canvas>
+  <audio id="confetti-sound" src="confetti.mp3" autoplay></audio>
+  <script type="module">
+    import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+    confetti({
+      particleCount: 150,
+      spread: 120,
+      origin: { y: 0.6 }
+    });
+    setTimeout(() => window.close(), 1500);
+  </script>
+</body>
+</html>
