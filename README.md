@@ -1,2 +1,2 @@
 # wasteofmac
-github for mac gru
+wasteofclient for mac gru
